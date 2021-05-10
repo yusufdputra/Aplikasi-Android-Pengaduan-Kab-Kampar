@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:theme="@style/Theme.PengaduanKecelakaan.AppBarOverlay"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:padding="@dimen/small"
+                android:src="@drawable/logo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="@dimen/medium"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="?actionBarSize"
+        android:layout_marginBottom="@dimen/small"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/medium">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_keramaian"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium"
+                android:hint="@string/pusat_keramaian"
+                android:textColorHint="@color/green_font"
+                app:boxCornerRadiusBottomEnd="@dimen/medium"
+                app:boxCornerRadiusBottomStart="@dimen/medium"
+                app:boxCornerRadiusTopEnd="@dimen/medium"
+                app:boxCornerRadiusTopStart="@dimen/medium">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_keramaian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:paddingHorizontal="@dimen/medium"
+                    android:textColor="@color/green_font" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_pengaju"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium"
+                android:hint="@string/pengaju"
+                android:textColorHint="@color/green_font"
+                app:boxCornerRadiusBottomEnd="@dimen/medium"
+                app:boxCornerRadiusBottomStart="@dimen/medium"
+                app:boxCornerRadiusTopEnd="@dimen/medium"
+                app:boxCornerRadiusTopStart="@dimen/medium">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_pengaju"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:paddingHorizontal="@dimen/medium"
+                    android:textColor="@color/green_font" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_tempat"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium"
+                android:hint="@string/tempat"
+                android:textColorHint="@color/green_font"
+                app:boxCornerRadiusBottomEnd="@dimen/medium"
+                app:boxCornerRadiusBottomStart="@dimen/medium"
+                app:boxCornerRadiusTopEnd="@dimen/medium"
+                app:boxCornerRadiusTopStart="@dimen/medium">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_tempat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:paddingHorizontal="@dimen/medium"
+                    android:textColor="@color/green_font" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_kordinat"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:hint="@string/kordinat"
+                    android:textColorHint="@color/green_font"
+
+                    app:boxCornerRadiusBottomEnd="@dimen/medium"
+                    app:boxCornerRadiusBottomStart="@dimen/medium"
+                    app:boxCornerRadiusTopEnd="@dimen/medium"
+                    app:boxCornerRadiusTopStart="@dimen/medium"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:id="@+id/et_kordinat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/medium"
+                        android:textColor="@color/green_font" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/iv_get_lokasi"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="@dimen/medium"
+                    android:clickable="true"
+                    android:src="@drawable/ic_twotone_add_location_alt_24"
+                    app:layout_constraintBottom_toBottomOf="@+id/til_kordinat"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/til_kordinat" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_jalan"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium"
+                android:hint="@string/jalan"
+                android:textColorHint="@color/green_font"
+                app:boxCornerRadiusBottomEnd="@dimen/medium"
+                app:boxCornerRadiusBottomStart="@dimen/medium"
+                app:boxCornerRadiusTopEnd="@dimen/medium"
+                app:boxCornerRadiusTopStart="@dimen/medium">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_jalan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:paddingHorizontal="@dimen/medium"
+                    android:textColor="@color/green_font" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--            <com.google.android.material.textfield.TextInputLayout-->
+            <!--                android:id="@+id/til_rambu"-->
+            <!--                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="@dimen/medium"-->
+            <!--                android:hint="@string/rambu"-->
+            <!--                android:textColorHint="@color/green_font"-->
+            <!--                app:boxCornerRadiusBottomEnd="@dimen/medium"-->
+            <!--                app:boxCornerRadiusBottomStart="@dimen/medium"-->
+            <!--                app:boxCornerRadiusTopEnd="@dimen/medium"-->
+            <!--                app:boxCornerRadiusTopStart="@dimen/medium">-->
+
+            <!--                <com.google.android.material.textfield.TextInputEditText-->
+            <!--                    android:id="@+id/et_rambu"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:inputType="textMultiLine"-->
+            <!--                    android:paddingHorizontal="@dimen/medium"-->
+            <!--                    android:textColor="@color/green_font" />-->
+            <!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_rambu2"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/jenis_rambu"
+                android:textColorHint="@color/green_font"
+                app:boxCornerRadiusBottomEnd="@dimen/medium"
+                app:boxCornerRadiusBottomStart="@dimen/medium"
+                app:boxCornerRadiusTopEnd="@dimen/medium"
+                app:boxCornerRadiusTopStart="@dimen/medium">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/small"
+                    android:paddingHorizontal="@dimen/medium"
+                    android:text="@string/jenis_rambu"
+                    android:textColor="@color/green_font" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spin_rambu"
+                    style="@style/Widget.AppCompat.Spinner.DropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:autofillHints="@string/jenis_rambu"
+                    android:background="@drawable/bg_spinner"
+                    android:entries="@array/spinner_rambu"
+
+                    android:paddingVertical="@dimen/large"
+                    android:paddingHorizontal="@dimen/medium"
+                    android:textColor="@color/green_font" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_keluhan"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium"
+                android:hint="@string/keluhan"
+                android:textColorHint="@color/green_font"
+                app:boxCornerRadiusBottomEnd="@dimen/medium"
+                app:boxCornerRadiusBottomStart="@dimen/medium"
+                app:boxCornerRadiusTopEnd="@dimen/medium"
+                app:boxCornerRadiusTopStart="@dimen/medium">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_keluhan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|left"
+                    android:inputType="textMultiLine"
+                    android:lines="6"
+                    android:overScrollMode="always"
+                    android:paddingHorizontal="@dimen/medium"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:scrollHorizontally="false"
+                    android:textColor="@color/green_font" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium"
+                android:paddingHorizontal="@dimen/medium"
+                android:text="@string/lokasi" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium"
+                android:paddingHorizontal="@dimen/medium">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/iv_lokasi1"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/bg_green_round" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_lokasi1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/small"
+                        android:text="@string/lokasi1"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        app:cornerRadius="@dimen/large" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/iv_lokasi2"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/bg_green_round" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_lokasi2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/small"
+                        android:text="@string/lokasi1"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        app:cornerRadius="@dimen/large" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium"
+                android:paddingHorizontal="@dimen/medium"
+                android:text="@string/up_ktp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/medium"
+                android:paddingHorizontal="@dimen/medium">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/iv_ktp"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/bg_green_round" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_ktp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/small"
+                        android:text="@string/lokasi1"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        app:cornerRadius="@dimen/large" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_kirim"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small"
+                android:backgroundTint="@color/eastern_blue"
+                android:text="@string/btn_kirim"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:cornerRadius="@dimen/large" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

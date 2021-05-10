@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="fill_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/tl_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/medium"
+                android:layout_marginTop="16dp"
+                android:padding="@dimen/small"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/textBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/medium"
+                        android:text="Nama Pengaju" />
+
+                    <TextView
+                        android:id="@+id/tv_nama_pengaju"
+                        style="@style/textBlack"
+                        android:layout_weight="1"
+                        android:inputType="textMultiLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/textBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/medium"
+                        android:text="Waktu Pengajuan" />
+
+                    <TextView
+                        android:id="@+id/tv_waktu"
+                        style="@style/textBlack"
+                        android:layout_weight="1"
+                        android:inputType="textMultiLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/textBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/medium"
+                        android:text="Kebutuhan" />
+
+                    <TextView
+                        android:id="@+id/tv_rambu"
+                        style="@style/textBlack"
+                        android:layout_weight="1"
+                        android:inputType="textMultiLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow android:layout_width="wrap_content">
+
+                    <TextView
+                        style="@style/textBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/medium"
+                        android:text="Nama Tempat" />
+
+                    <TextView
+                        android:id="@+id/tv_nama_tempat"
+                        style="@style/textBlack"
+                        android:layout_weight="1"
+                        android:inputType="textMultiLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/textBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/medium"
+                        android:text="Keluhan" />
+
+                    <TextView
+                        android:id="@+id/tv_keluhan"
+                        style="@style/textBlack"
+                        android:layout_weight="1"
+                        android:inputType="textMultiLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/textBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/medium"
+                        android:text="Nama Jalan" />
+
+                    <TextView
+                        android:id="@+id/tv_nama_jalan"
+                        style="@style/textBlack"
+                        android:layout_weight="1"
+                        android:inputType="textMultiLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+            </TableLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/medium"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/tl_detail"
+                tools:layout_editor_absoluteX="12dp">
+
+                <TextView
+                    android:id="@+id/tv_fl1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Foto Lokasi (Sisi 1)" />
+
+                <ImageView
+                    android:id="@+id/iv_lokasi1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="@dimen/medium"/>
+
+                <TextView
+                    android:id="@+id/tv_fl2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/medium"
+                    android:text="Foto Lokasi (Sisi 2)" />
+
+                <ImageView
+                    android:id="@+id/iv_lokasi2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="@dimen/medium"/>
+
+                <TextView
+                    android:id="@+id/tv_ktp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/medium"
+                    android:text="Foto KTP Pengaju" />
+
+                <ImageView
+                    android:id="@+id/iv_ktp"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="@dimen/medium"/>
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_tuju_lokasi"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small"
+                android:backgroundTint="@color/eastern_blue"
+                android:text="Tuju Lokasi"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:cornerRadius="@dimen/large"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_tuju_tolak"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small"
+                android:backgroundTint="@color/quantum_orange"
+                android:text="Tolak"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:cornerRadius="@dimen/large"
+                app:layout_constraintTop_toBottomOf="@+id/btn_tuju_lokasi"
+                tools:layout_editor_absoluteX="6dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:backgroundTint="@color/green_line"
+        android:text="@string/back"
+        android:textColor="@color/white"
+        app:icon="@drawable/quantum_ic_arrow_back_grey600_24"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

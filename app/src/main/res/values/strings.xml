@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Pengaduan Kecelakaan</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="add">Tambah</string>
+    <string name="back">Kembali</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="hi">Halo, </string>
+    <string name="welcome">Selamat Datang</string>
+    <string name="pesan1">Kamu bisa mengurangi </string>
+    <string name="pesan11">angka kecelakaan!</string>
+    <string name="pesan111">Gunakan layanan Pengaduan Ini</string>
+
+    <string name="pesan2">Kami Siap Melayani</string>
+    <string name="pesan22">Dinas Perhubungan Kabupaten Kampar </string>
+    <string name="pesan222">Pengaduan anda akan kami respon!</string>
+    <string name="pesan_batasan">Hanya Untuk Daerah Kabupaten Kampar, Riau</string>
+    
+<!--    menu pengaduan-->
+    <string name="pilih">Pilih Pusat Keramaian</string>
+    <string name="pusat_keramaian">Pusat Keramaian</string>
+    <string name="ajukan">Pilih...</string>
+
+<!--    form-->
+    <string name="lokasi1">pilih</string>
+    <string name="pengaju">Nama Pengaju</string>
+    <string name="up_ktp">Upload KTP Anda</string>
+    <string name="jalan">Nama Jalan</string>
+    <string name="tempat">Nama Tempat</string>
+    <string name="keluhan">Keluhan</string>
+    <string name="ktp">Foto KTP</string>
+    <string name="rambu">Kebutuhan Rambu-Rambu</string>
+    <string name="jenis_rambu">Jenis Rambu-Rambu</string>
+    <string name="lokasi">Foto Lokasi (2 Arah) : </string>
+
+    <string name="btn_kirim">Kirim</string>
+
+    <string name="kordinat">Ambil Titik Koordinat</string>
+
+
+<!--    REF-->
+    <string name="ref_pengaduan">pengaduan</string>
+
+<!--    login-->
+    <string name="email">Email</string>
+    <string name="pw">Password</string>
+    <string name="msg_no_akun">Akun Tidak Ditemukan</string>
+    <string name="msg_salah">Email dan Password yang anda masukkan salah. Coba lagi!</string>
+    <string name="msg_no_verif">Akun anda belum dilakukan verifikasi, silahkan cek Email anda.</string>
+    <string name="login">Login</string>
+
+    <string-array name="spinner_rambu">
+        <item>Peringatan</item>
+        <item>Larangan</item>
+        <item>Perintah</item>
+        <item>Petunjuk</item>
+    </string-array>
+</resources>

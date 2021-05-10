@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "26400632951",
+    "project_id": "pengaduan-dinas-perhubungan",
+    "storage_bucket": "pengaduan-dinas-perhubungan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26400632951:android:16028a259d7530953a9672",
+        "android_client_info": {
+          "package_name": "com.ysf.pengaduankecelakaan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "26400632951-juaq0hnblluoq9ln9fh5ucfs47orsqm4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ysf.pengaduankecelakaan",
+            "certificate_hash": "971139f8930479b8f1a6a79623e61468ca9a64f3"
+          }
+        },
+        {
+          "client_id": "26400632951-jnjqq3qnfoemiis5uprpvo3j36jruhel.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnEEVWqgQyZYypO_5rmfe-acM2e7GN_Z4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "26400632951-jnjqq3qnfoemiis5uprpvo3j36jruhel.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
